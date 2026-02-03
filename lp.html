@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pawmatch™</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<script>
+tailwind.config = {
+theme: {
+extend: {
+colors: {
+burgundy: {
+DEFAULT: '#5d162b',
+dark: '#4a1122',
+darker: '#3d0e1c',
+                        },
+                    },
+fontFamily: {
+'inter': ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+</script>
+<style>
+body {
+font-family: 'Inter', sans-serif;
+        }
+html {
+scroll-behavior: smooth;
+        }
+.gradient-bg {
+background: linear-gradient(135deg, #5d162b 0%, #4a1122 50%, #3d0e1c 100%);
+        }
+.dot-pattern {
+background-image: radial-gradient(circle, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+background-size: 20px 20px;
+        }
+</style>
+</head>
+<body class="bg-burgundy text-white">
+<!-- Hero Section -->
+<section class="relative min-h-screen gradient-bg dot-pattern overflow-hidden">
+<!-- Large Background Text Overlay - Multiple Lines -->
+<div class="absolute inset-0 flex flex-col justify-between pointer-events-none overflow-hidden py-0">
+<h1 class="text-[18vw] md:text-[16vw] lg:text-[14vw] font-black text-white/5 whitespace-nowrap select-none leading-none -ml-2">
+SWIPE.
+</h1>
+<h1 class="text-[18vw] md:text-[16vw] lg:text-[14vw] font-black text-white/5 whitespace-nowrap select-none leading-none -ml-2">
+MATCH.
+</h1>
+<h1 class="text-[18vw] md:text-[16vw] lg:text-[14vw] font-black text-white/5 whitespace-nowrap select-none leading-none -ml-2">
+WAG.
+</h1>
+</div>
+
+<div class="max-w-7xl mx-auto px-6 lg:px-12 py-12 relative z-10">
+<div class="grid lg:grid-cols-2 gap-12 items-center min-h-screen">
+<!-- Left: Content -->
+<div class="space-y-8 pt-12 lg:pt-0">
+<div class="space-y-6">
+<h1 class="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
+                                Pawmatch™
+</h1>
+<h2 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+                                SWIPE. MATCH. WAG.
+</h2>
+<p class="text-xl md:text-2xl text-white/80 leading-relaxed max-w-xl">
+                                Where pet owners and pet sitters find the right fit – based on compatibility, not chance.
+</p>
+</div>
+
+<!-- CTA Button -->
+<a href="#waitlist" class="px-8 py-4 border-2 border-white rounded-full text-lg font-medium hover:bg-white hover:text-burgundy transition-all duration-300 flex items-center gap-3 group inline-flex">
+                            Join the pack & start matching
+<svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+<path d="M10 3.5a1.5 1.5 0 013 0V4a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-.5a1.5 1.5 0 000 3h.5a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-.5a1.5 1.5 0 00-3 0v.5a1 1 0 01-1 1H6a1 1 0 01-1-1v-3a1 1 0 00-1-1h-.5a1.5 1.5 0 010-3H4a1 1 0 001-1V6a1 1 0 011-1h3a1 1 0 001-1v-.5z"/>
+</svg>
+</a>
+
+<div class="pt-8">
+<p class="text-xl font-semibold">
+                                Launching soon in Amsterdam
+</p>
+</div>
+</div>
+
+<!-- Right: Phone Mockups - Overlapping -->
+<div class="relative flex items-center justify-end">
+<div class="relative mr-8 lg:mr-12">
+<!-- Back Phone (Left) -->
+<div class="relative z-10">
+<img 
+src="https://i.ibb.co/1YmzQHc0/Home-screen.png" 
+alt="Cooper the Dalmatian" 
+class="w-48 md:w-56 lg:w-64 h-auto rounded-3xl shadow-2xl object-cover"
+/>
+</div>
+<!-- Front Phone (Right) - Overlapping -->
+<div class="absolute -right-16 md:-right-20 lg:-right-24 top-12 md:top-16 z-20">
+<img 
+src="https://i.ibb.co/FqWnLnwv/Animation-final.png" 
+alt="It's a Match" 
+class="w-48 md:w-56 lg:w-64 h-auto rounded-3xl shadow-2xl object-cover"
+/>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Features Bar -->
+<section class="bg-white text-burgundy py-8">
+<div class="max-w-7xl mx-auto px-6 lg:px-12">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+<div>
+<h3 class="font-semibold text-lg">Personality-Based Matching</h3>
+</div>
+<div>
+<h3 class="font-semibold text-lg">Verified Sitters</h3>
+</div>
+<div>
+<h3 class="font-semibold text-lg">Lower Commission Rates</h3>
+</div>
+<div>
+<h3 class="font-semibold text-lg">Supporting Animal Shelters</h3>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Waitlist Section -->
+<section id="waitlist" class="relative gradient-bg dot-pattern py-20 overflow-hidden">
+<!-- Large Background Text Overlay -->
+<div class="absolute inset-0 flex items-center justify-center pointer-events-none overflow-hidden">
+<h2 class="text-[20vw] md:text-[18vw] lg:text-[15vw] font-black text-white/5 whitespace-nowrap select-none leading-none">
+AMSTERDAM
+</h2>
+</div>
+
+<div class="max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
+<div class="grid lg:grid-cols-2 gap-12 items-center">
+<!-- Left: Phone Mockup -->
+<div class="relative flex items-center justify-center lg:justify-start">
+<img 
+src="https://i.ibb.co/9971wP9s/Home-screen-copy-2.png" 
+alt="Pawmatch App" 
+class="w-64 md:w-72 lg:w-80 h-auto rounded-3xl shadow-2xl object-cover"
+/>
+</div>
+
+<!-- Right: Waitlist Form -->
+<div class="space-y-8">
+<h2 class="text-5xl md:text-6xl font-bold leading-tight">
+                        JOIN THE WAITLIST
+</h2>
+
+<!-- Email Input -->
+<div class="space-y-4">
+<input 
+type="email" 
+placeholder="Email address" 
+class="w-full px-6 py-4 bg-transparent border-2 border-white/50 rounded-full text-white placeholder-white/50 focus:outline-none focus:border-white transition-all"
+/>
+
+<!-- Button Grid -->
+<div class="grid md:grid-cols-2 gap-4">
+<button class="px-6 py-4 bg-white text-burgundy rounded-full font-semibold hover:bg-white/90 transition-all">
+                                I'm a Sitter
+</button>
+<button class="px-6 py-4 bg-white text-burgundy rounded-full font-semibold hover:bg-white/90 transition-all">
+                                I'm a Pet Owner
+</button>
+</div>
+</div>
+
+<!-- Impact Message -->
+<div class="space-y-4 pt-4">
+<p class="text-xl leading-relaxed">
+                            When you book through Pawmatch, a part of every booking automatically goes to animal shelters.
+</p>
+<p class="text-lg text-white/80">
+                            No extra steps – No donations asked.
+</p>
+</div>
+
+<!-- App Store Badges -->
+<div class="flex gap-4 pt-4">
+<a href="#" class="opacity-80 hover:opacity-100 transition-opacity">
+<img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg" alt="Download on App Store" class="h-12">
+</a>
+<a href="#" class="opacity-80 hover:opacity-100 transition-opacity">
+<img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play" class="h-12">
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-white text-burgundy py-8">
+<div class="max-w-7xl mx-auto px-6 lg:px-12">
+<div class="flex flex-col md:flex-row justify-between items-center gap-6">
+<!-- Social Media Icons -->
+<div class="flex items-center gap-6">
+<!-- TikTok -->
+<a href="https://tiktok.com" target="_blank" class="w-10 h-10 flex items-center justify-center hover:opacity-70 transition-opacity">
+<svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+<path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-5.2 1.74 2.89 2.89 0 012.31-4.64 2.93 2.93 0 01.88.13V9.4a6.84 6.84 0 00-1-.05A6.33 6.33 0 005 20.1a6.34 6.34 0 0010.86-4.43v-7a8.16 8.16 0 004.77 1.52v-3.4a4.85 4.85 0 01-1-.1z"/>
+</svg>
+</a>
+
+<!-- Instagram -->
+<a href="https://instagram.com" target="_blank" class="w-10 h-10 flex items-center justify-center hover:opacity-70 transition-opacity">
+<svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+<path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+</svg>
+</a>
+
+<!-- Facebook -->
+<a href="https://facebook.com" target="_blank" class="w-10 h-10 flex items-center justify-center hover:opacity-70 transition-opacity">
+<svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+<path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+</svg>
+</a>
+</div>
+
+<div class="text-sm">
+                    2026 Pawmatch. All rights reserved.
+</div>
+</div>
+</div>
+</footer>
+</body>
+</html>
